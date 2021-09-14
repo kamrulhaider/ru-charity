@@ -1,0 +1,22 @@
+/* footer start  */
+footer{
+  padding: 40px 20px;
+  background-color:#005AA7;
+  color: #fff;
+}
+.t-u a{
+  text-decoration: none;
+  color: #fff;
+}
+.s-m{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+h5{
+  font-weight: 800;
+}
+/* footer end  */

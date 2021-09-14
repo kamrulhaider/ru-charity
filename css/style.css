@@ -1,0 +1,45 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.marquee-bg {
+  background-color: #889eaf;
+}
+/* notice start */
+.month_bg_color,
+.date_bg_color {
+  color: #fff;
+}
+.month_bg_color {
+  background-color: rgb(10, 202, 199);
+}
+.date_bg_color {
+  background-color: rgb(143, 132, 128);
+}
+/* notice end  */
+
+/* calender start  */
+
+/* calender end  */
+
+/* blog card start */
+.card {
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card_a a {
+  color: #000;
+  text-decoration: none;
+}
+/* blog card end */
+
+/* reach us  start*/
+.reach_border {
+  background-color: #ddd;
+  border-radius: 8px;
+}
+.reach_us {
+  margin-top: 65px;
+  padding: 20px 30px;
+}
+/* reach us end  */
