@@ -5,6 +5,19 @@ body {
 .marquee-bg {
   background-color: #889eaf;
 }
+.slider-bg {
+  height: 400px;
+  background-image: url(../images/2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slider-bg:nth-child(1) {
+  background-image: url(../images/1.svg);
+}
+.slider-bg:nth-child(2) {
+  background-image: url(../images/3.svg);
+}
 /* notice start */
 .month_bg_color,
 .date_bg_color {
