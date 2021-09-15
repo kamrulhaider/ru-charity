@@ -1,9 +1,12 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
-.marquee-bg {
-  background-color: #889eaf;
+/* common styles */
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #232524;
 }
 .slider-bg {
   height: 400px;

@@ -1,5 +1,11 @@
+marquee {
+  color: #ffffff;
+}
+.marquee-bg {
+  background-color: #232524;
+}
 .nav-bg {
-  background-color: #506d84;
+  background-color: #0d5be1;
 }
 .nav-text {
   margin-left: 10px;
@@ -8,8 +14,8 @@
   border-radius: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #889eaf;
+  color: #ffffff;
+  background-color: #3d7ce7;
   text-decoration: none;
   transition: all 0.3s ease-in;
 }
@@ -20,10 +26,11 @@
 }
 .now-active {
   background-color: #ffffff;
+  color: #000000;
 }
 .submenu-text {
   display: block;
-  background-color: #889eaf;
+  background-color: #3d7ce7;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -39,7 +46,7 @@
 .dropdown-content,
 .dropdown-content2,
 .dropdown-content3 {
-  background-color: #506d84;
+  background-color: #0d5be1;
   border-radius: 10px;
   width: max-content;
   margin-left: 10px;
