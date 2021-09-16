@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <!-- marquee start  -->
     <div class="container-fluid marquee-bg">
       <marquee class="spacing" behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();">
@@ -40,10 +40,9 @@
     <!-- marquee end  -->
 
     <!-- nav start  -->
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light nav-bg">
       <div class="container-fluid">
-
-        <button onclick="closeAll()" class="navbar-toggler toggler_button bg-light" type="button"
+        <button onclick="closeAll()" class="navbar-toggler toggler_button bg-light ms-auto" type="button"
           data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,22 +55,25 @@
           </div>
 
           <div class="my-2 dropdown-container">
-            <a onclick="showDiv('dropdown-content','dropdown-content2','dropdown-content3')" href="#"
-              class="nav-text">About us <i class="fas fa-chevron-circle-down"></i></a>
+            <p onclick="showDiv('dropdown-content','dropdown-content2','dropdown-content3')" class="nav-text">About us
+              <i class="fas fa-chevron-circle-down"></i>
+            </p>
             <div id="dropdown-content" class="dropdown-content">
-              <a onclick="showDiv2('dropdown-content2','dropdown-content3')" class="submenu-text" href="#">Who we are?
-                <i class="fas fa-arrow-alt-circle-right"></i></a>
+              <p onclick="showDiv2('dropdown-content2','dropdown-content3')" class="submenu-text">Who we are?
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </p>
               <div id="dropdown-content2" class="dropdown-content2">
-                <a class="submenu-text" href="#">Our people</a>
-                <a class="submenu-text" href="#">History</a>
-                <a class="submenu-text" href="#">How we work?</a>
-                <a class="submenu-text" href="#">Mission & vision</a>
+                <a class="submenu-text" href="our-people.html">Our people</a>
+                <a class="submenu-text" href="history.html">History</a>
+                <a class="submenu-text" href="work.html">How we work?</a>
+                <a class="submenu-text" href="mission.html">Mission & vision</a>
               </div>
-              <a onclick="showDiv2('dropdown-content3','dropdown-content2')" class="submenu-text" href="#">Where we
+              <p onclick="showDiv2('dropdown-content3','dropdown-content2')" class="submenu-text">Where we
                 work?
-                <i class="fas fa-arrow-alt-circle-right"></i></a>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </p>
               <div id="dropdown-content3" class="dropdown-content3">
-                <a class="submenu-text" href="#">Places</a>
+                <a class="submenu-text" href="places.html">Places</a>
               </div>
             </div>
           </div>
@@ -81,8 +83,8 @@
               what we do <i class="fas fa-chevron-circle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-              <li><a class="submenu-text" href="#">Sectors & Priorities</a></li>
-              <li><a class="submenu-text" href="#">our archive</a></li>
+              <li><a class="submenu-text" href="sectors.html">Sectors & Priorities</a></li>
+              <li><a class="submenu-text" href="archive.html">our archive</a></li>
             </ul>
           </div>
 
@@ -91,8 +93,8 @@
               get involved <i class="fas fa-chevron-circle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-              <li><a class="submenu-text" href="#">Mentors</a></li>
-              <li><a class="submenu-text" href="#">career</a></li>
+              <li><a class="submenu-text" href="mentors.html">Mentors</a></li>
+              <li><a class="submenu-text" href="career.html">career</a></li>
             </ul>
           </div>
 
@@ -101,33 +103,38 @@
               Connect & giving <i class="fas fa-chevron-circle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-              <li><a class="submenu-text" href="#">contact us</a></li>
-              <li><a class="submenu-text" href="#">donate</a></li>
+              <li><a class="submenu-text" href="#contact">contact us</a></li>
+              <li><a class="submenu-text" href="donate.html">donate</a></li>
             </ul>
           </div>
 
           <div onclick="closeAll()" class="my-2 dropdown">
-            <a class="nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-text" href="curriculum.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               co-curriculum <i class="fas fa-chevron-circle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-              <li><a class="submenu-text" href="#">library</a></li>
-              <li><a class="submenu-text" href="#">debating club</a></li>
-              <li><a class="submenu-text" href="#">olympiad & competition</a></li>
+              <li><a class="submenu-text" href="library.html">library</a></li>
+              <li><a class="submenu-text" href="debating.html">debating club</a></li>
+              <li><a class="submenu-text" href="olympiad.html">olympiad & competition</a></li>
             </ul>
           </div>
 
           <div onclick="closeAll()" class="my-2">
-            <a href="#" class="nav-text">Album</a>
+            <a href="album.html" class="nav-text">Album</a>
           </div>
 
           <div onclick="closeAll()" class="my-2">
-            <a href="#" class="nav-text">Scholarship</a>
+            <a href="scholarship.html" class="nav-text">Scholarship</a>
           </div>
 
           <div onclick="closeAll()" class="my-2">
-            <a href="#" class="nav-text">session & workshop</a>
+            <a href="session.html" class="nav-text">session & workshop</a>
           </div>
+
+          <!-- <div onclick="closeAll()" class="my-2">
+            <a href="publication.html" class="nav-text">Publication</a>
+          </div> -->
+
 
         </div>
 
@@ -136,7 +143,7 @@
     <!-- navbar end -->
 
     <!-- carosul start  -->
-    <div class="container my-3">
+    <div class="container-fluid g-0">
       <div id="carouselExampleIndicators" data-bs-interval="5000" class="carousel slide  carousel-fade "
         data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -147,7 +154,7 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner rounded-3">
+        <div class="carousel-inner">
           <div class="carousel-item slider-bg active">
             <div class="row align-items-center h-100">
               <div class="col-md-6">
@@ -196,15 +203,12 @@
 
   <main>
     <!-- notification start  -->
-    <section class="my-4">
+    <section class="my-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
+            <h3 class="heading">Notices and Information :</h3>
             <div>
-              <h3 class="heading">Notices and Information :</h3>
-            </div>
-            <div>
-
               <div class="row">
                 <!-- notification date and month start -->
                 <div class="col-md-2 mb-3">
@@ -242,7 +246,6 @@
                   </div>
                 </div>
               </div>
-
 
               <div class="row">
                 <!-- notification date and month start -->
@@ -301,10 +304,9 @@
                 </div>
               </div>
             </div>
-
-
 
           </div>
+
           <div class="col-lg-6">
 
             <!-- calender start -->
@@ -313,11 +315,11 @@
                 <span class="month-picker" id="month-picker"></span>
                 <div class="year-picker">
                   <span class="year-change" id="prev-year">
-                    <pre><</pre>
+                    <i class="fas fa-arrow-alt-circle-left"></i>
                   </span>
-                  <span id="year">2021</span>
+                  <span id="year"></span>
                   <span class="year-change" id="next-year">
-                    <pre>></pre>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
                   </span>
                 </div>
               </div>
@@ -343,258 +345,193 @@
         </div>
       </div>
     </section>
-
     <!-- notification end  -->
 
     <!-- blog start  -->
-    <section>
+    <section class="mb-5">
       <div class="container">
-        <div>
-          <h3 class="blog_heading pb-5 d-flex justify-content-center">Blog</h3>
-        </div>
-        <!-- card start  -->
-
-        <div class="container pb-5">
-
-
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col card_a col-sm-1 pb-4">
-              <a href="##">
-                <div class="card h-100 ">
-                  <img src="images/card1.jpg" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Card title</h3>
-                    <p class="card-text text-center">This is a wider card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+        <h3 class="heading">Recent Blogs</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- card start -->
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="col">
+              <div class="card charity-blog">
+                <img src="images/card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blog title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
                 </div>
-              </a>
-            </div>
-
-            <div class="col card_a col-sm-1 pb-4">
-              <a href="##">
-                <div class="card h-100">
-                  <img src="images/card1.jpg" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Card title</h3>
-                    <p class="card-text text-center">This is a wider card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
-
-            <div class="col card_a col-sm-1 pb-4">
-              <a href="##">
-                <div class="card h-100">
-                  <img src="images/card1.jpg" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Card title</h3>
-                    <p class="card-text text-center">This is a wider card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="col card_a col-sm-1 pb-4">
-              <a href="##">
-                <div class="card h-100">
-                  <img src="images/card1.jpg" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Card title</h3>
-                    <p class="card-text text-center">This is a wider card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="col card_a col-sm-1 pb-4">
-              <a href="##">
-                <div class="card h-100">
-                  <img src="images/card1.jpg" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Card title</h3>
-                    <p class="card-text text-center">This is a wider card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="col card_a col-sm-1 pb-4">
-              <a href="##">
-                <div class="card h-100">
-                  <img src="images/card1.jpg" class="card-img-top img-fluid" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">Card title</h3>
-                    <p class="card-text text-center">This is a wider card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
-
-          </div>
-
-
-
-        </div>
-        <!-- card end  -->
-
-
-        <section class="pb-5">
-          <div class="container reach_border">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="reach_us">
-
-                  <div class="pb-4">
-                    <h4 class="reach_heading">Reach Us</h4>
-                  </div>
-                  <i class="fas fa-map-marker pb-3"> Rajshahi-6100</i> <br>
-                  <i class="fas fa-phone-alt pb-3"> +88 06891-581260 (Office)</i> <br>
-                  <i class="fas fa-mobile-alt pb-3"> +880 017 12345678</i> <br>
-                  <i class="fas fa-envelope pb-3"> xyz@gmail.com</i>
-
-
-
-                  <div class="mt-4">
-                    <h6>Find us Social Media</h6>
-                    <a href="##"><i class="fab fa-facebook"></i></a>
-                    <a href="##"> <i class="fab fa-twitter"></i></a>
-                    <a href="##"> <i class="fab fa-instagram"></i></a>
-                    <a href="###"><i class="fab fa-flickr"></i></a>
-                    <a href="##"><i class="fab fa-linkedin"></i></a>
-                  </div>
-
-
-
-
-                </div>
-
               </div>
-
-              <div class="col-md-7 p-5 ">
-                <h3 class="form_heading">Leave A Message</h3>
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-
-
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-
-
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea2">Message</label>
-                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
-                  </div>
-
-
-
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-
-
-
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-              </div>
-
             </div>
-          </div>
+          </a>
+          <!-- card end -->
+          <!-- card start -->
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="col">
+              <div class="card charity-blog">
+                <img src="images/card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blog title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card end -->
+          <!-- card start -->
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="col">
+              <div class="card charity-blog">
+                <img src="images/card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blog title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card end -->
+          <!-- card start -->
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="col">
+              <div class="card charity-blog">
+                <img src="images/card.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blog title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card end -->
+        </div>
       </div>
     </section>
 
-    </div>
+    <!-- contact us start  -->
+    <section class="mb-5">
+      <div class="container">
+        <h3 class="heading">contact us</h3>
+        <div class="row contact py-5 rounded-3">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input type="Text" class="form-control" id="formName" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="formSubject" placeholder="Subject">
+              </div>
+              <div class="text-center">
+                <textarea class="form-control contact-txtarea" placeholder="Leave a comment here"></textarea>
+                <button type="submit" class="btn btn-outline-dark mt-3 mb-0">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 mt-md-0 mt-3">
+            <div class="phone-email">
+              <div>
+                <Table class="table table-light table-responsive">
+                  <tr>
+                    <td class="fw-bold">Location</td>
+                    <td>:</td>
+                    <td>Rajshahi</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Phone(office)</td>
+                    <td>:</td>
+                    <td>+8801901000000</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Phone(other)</td>
+                    <td>:</td>
+                    <td>+8801901000000</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Email</td>
+                    <td>:</td>
+                    <td>example@example.com</td>
+                  </tr>
+                </Table>
+              </div>
+              <div class="social-link">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-pinterest-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- blog end  -->
+    <!-- contact us end  -->
 
     <!-- map  -->
     <section>
-      <div class="container-fluid g-0">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58144.494516129664!2d88.57099623889512!3d24.380228204798865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefa96a38d031%3A0x10f93a950ed6f410!2sRajshahi!5e0!3m2!1sen!2sbd!4v1631013257429!5m2!1sen!2sbd"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58144.494516129664!2d88.57099623889512!3d24.380228204798865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefa96a38d031%3A0x10f93a950ed6f410!2sRajshahi!5e0!3m2!1sen!2sbd!4v1631013257429!5m2!1sen!2sbd"
+        width="100%" height="350px" style="border:0;" loading="lazy"></iframe>
     </section>
     <!-- map end  -->
 
+  </main>
 
-    <!-- footer start  -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-sm-1 pb-4">
-            <div>
-              <p>Millions of people of all ages and from around the world are improving other lives better with us.</p>
-            </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-4 pb-4">
+          <div>
+            <p class="footer-text">Millions of people of all ages and from around the world are improving other lives
+              better with us.
+            </p>
           </div>
-          <div class="col-md-7 col-sm-1 pb-4 t-u">
-            <div class="row">
-              <div class="col-md-4 col-sm-1 pb-4">
-                <div>
-                  <h5>Usefull Links</h5>
-                  <a href="##">Link1</a><br>
-                  <a href="##">Link2</a><br>
-                  <a href="##">Link3</a><br>
-                  <a href="##">Link4</a><br>
-                  <a href="##">Link5</a>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-1 pb-4">
-                <div>
-                  <h5>Terms</h5>
-                  <a href="##">Link</a><br>
-                  <a href="##">Link</a><br>
-                  <a href="##">link</a><br>
-                  <a href="##">Link</a><br>
-                  <a href="##">link</a>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-1 pb-4">
-                <div>
-                  <h5>Useful Link </h5>
-                  <a href="##">Link</a><br>
-                  <a href="##">Link</a><br>
-                  <a href="##">Link</a><br>
-                  <a href="##">link</a><br>
-                  <a href="##">link</a>
-                </div>
+        </div>
+        <div class="col-lg-7 col-md-8 pb-4">
+          <div class="row">
+            <div class="col-md-4 col-sm-1 pb-4">
+              <div class="footer-link">
+                <a href="our-people.html">Our People</a><br>
+                <a href="history.html">History</a><br>
+                <a href="work.html">How We Work?</a><br>
+                <a href="mission.html">Mission & Vision</a><br>
+                <a href="places.html">Places</a><br>
+                <a href="scholarship.html">Scholarship</a>
               </div>
             </div>
-
+            <div class="col-md-4 col-sm-1 pb-4">
+              <div class="footer-link">
+                <a href="sectors.html">Sectors & Priorities</a><br>
+                <a href="archive.html">Archive</a><br>
+                <a href="mentors.html">Mentors</a><br>
+                <a href="career.html">Career</a><br>
+                <a href="donate.html">Donate</a><br>
+                <a href="session.html">Session & Workshop</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-1 pb-4">
+              <div class="footer-link">
+                <a href="curriculum.html">Co-curriculum</a><br>
+                <a href="library.html">Library</a><br>
+                <a href="debating.html">Debating Club</a><br>
+                <a href="olympiad.html">Olympiad</a><br>
+                <a href="album.html">Album</a><br>
+                <a href="publication.html">Publication</a>
+              </div>
+            </div>
           </div>
-
 
         </div>
       </div>
-    </footer>
-    <!-- footer end  -->
-
     </div>
-    </section>
-
-
-
-  </main>
-
+  </footer>
+  <!-- footer end  -->
 
   <!-- bootstrap js  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -606,6 +543,7 @@
 
   <script src="js/header.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

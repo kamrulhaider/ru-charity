@@ -17,5 +17,7 @@ function showDiv2(id, id2) {
 
 function closeAll() {
     document.getElementById('dropdown-content').style.display = 'none';
+    document.getElementById('dropdown-content2').style.display = 'none';
+    document.getElementById('dropdown-content3').style.display = 'none';
     a = 0;
 };

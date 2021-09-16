@@ -5,11 +5,12 @@ body {
 .heading {
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #232524;
 }
+
 .slider-bg {
-  height: 400px;
+  height: 83vh;
   background-image: url(../images/2.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +50,6 @@ body {
 .calendar {
   box-shadow: rgb(0, 0, 0) 0px 0px 5px inset;
 }
-
 .calendar-header {
   display: flex;
   justify-content: space-between;
@@ -196,50 +196,12 @@ body {
   margin: 0 10px;
   cursor: pointer;
 }
+.year-change i {
+  font-size: 16px;
+}
 
 .year-change:hover {
   background-color: #edf0f5;
-}
-
-.calendar-footer {
-  padding: 10px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.toggle {
-  display: flex;
-}
-
-.toggle span {
-  margin-right: 10px;
-  color: #151426;
-}
-
-.dark-mode-switch {
-  position: relative;
-  width: 48px;
-  height: 25px;
-  border-radius: 14px;
-  background-color: #c3c2c8;
-  cursor: pointer;
-}
-
-.dark-mode-switch-ident {
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background-color: #fdfdfd;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: left 0.2s ease-in-out;
-}
-
-.dark .dark-mode-switch .dark-mode-switch-ident {
-  top: 2px;
-  left: calc(2px + 50%);
 }
 
 .month-list {
@@ -296,23 +258,29 @@ body {
 /* calender end  */
 
 /* blog card start */
-.card {
-  border-radius: 5px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.charity-blog {
+  /* box-shadow: 0px 0px 5px #232524; */
+  transition: all 0.5s ease-in-out;
 }
-.card_a a {
-  color: #000;
-  text-decoration: none;
+.charity-blog:hover {
+  box-shadow: 0px 0px 20px #3451a1;
 }
 /* blog card end */
 
 /* reach us  start*/
-.reach_border {
-  background-color: #ddd;
-  border-radius: 8px;
+.contact {
+  background-image: url(../images/1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.reach_us {
-  margin-top: 65px;
-  padding: 20px 30px;
+.social-link i {
+  font-size: 40px;
+  color: #ffffff;
+  transition: 0.4s ease-in-out;
+}
+.social-link i:hover {
+  font-size: 40px;
+  color: #000000;
 }
 /* reach us end  */
