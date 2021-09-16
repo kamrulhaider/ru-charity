@@ -47,7 +47,7 @@ body {
 }
 
 .calendar {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 5px inset;
 }
 
 .calendar-header {
@@ -80,7 +80,7 @@ body {
 .calendar-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  /* gap: 2px; */
+  gap: 2px;
   color: #151426;
 }
 
