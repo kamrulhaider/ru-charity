@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>charity</title>
+    <title>Charity Blog</title>
 
     <!-- font awsome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <!-- marquee start  -->
         <div class="container-fluid marquee-bg">
             <marquee class="spacing" behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();">
@@ -41,8 +41,7 @@
         <!-- nav start  -->
         <nav class="navbar navbar-expand-lg navbar-light nav-bg">
             <div class="container-fluid">
-
-                <button onclick="closeAll()" class="navbar-toggler toggler_button bg-light" type="button"
+                <button onclick="closeAll()" class="navbar-toggler toggler_button bg-light ms-auto" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,24 +54,27 @@
                     </div>
 
                     <div class="my-2 dropdown-container">
-                        <a onclick="showDiv('dropdown-content','dropdown-content2','dropdown-content3')" href="#"
-                            class="nav-text">About us <i class="fas fa-chevron-circle-down"></i></a>
+                        <p onclick="showDiv('dropdown-content','dropdown-content2','dropdown-content3')"
+                            class="nav-text">About us
+                            <i class="fas fa-chevron-circle-down"></i>
+                        </p>
                         <div id="dropdown-content" class="dropdown-content">
-                            <a onclick="showDiv2('dropdown-content2','dropdown-content3')" class="submenu-text"
-                                href="#">Who we are?
-                                <i class="fas fa-arrow-alt-circle-right"></i></a>
+                            <p onclick="showDiv2('dropdown-content2','dropdown-content3')" class="submenu-text">Who we
+                                are?
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                            </p>
                             <div id="dropdown-content2" class="dropdown-content2">
-                                <a class="submenu-text" href="#">Our people</a>
-                                <a class="submenu-text" href="#">History</a>
-                                <a class="submenu-text" href="#">How we work?</a>
-                                <a class="submenu-text" href="#">Mission & vision</a>
+                                <a class="submenu-text" href="our-people.html">Our people</a>
+                                <a class="submenu-text" href="history.html">History</a>
+                                <a class="submenu-text" href="work.html">How we work?</a>
+                                <a class="submenu-text" href="mission.html">Mission & vision</a>
                             </div>
-                            <a onclick="showDiv2('dropdown-content3','dropdown-content2')" class="submenu-text"
-                                href="#">Where we
+                            <p onclick="showDiv2('dropdown-content3','dropdown-content2')" class="submenu-text">Where we
                                 work?
-                                <i class="fas fa-arrow-alt-circle-right"></i></a>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                            </p>
                             <div id="dropdown-content3" class="dropdown-content3">
-                                <a class="submenu-text" href="#">Places</a>
+                                <a class="submenu-text" href="places.html">Places</a>
                             </div>
                         </div>
                     </div>
@@ -82,8 +84,8 @@
                             what we do <i class="fas fa-chevron-circle-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-                            <li><a class="submenu-text" href="#">Sectors & Priorities</a></li>
-                            <li><a class="submenu-text" href="#">our archive</a></li>
+                            <li><a class="submenu-text" href="sectors.html">Sectors & Priorities</a></li>
+                            <li><a class="submenu-text" href="archive.html">our archive</a></li>
                         </ul>
                     </div>
 
@@ -92,8 +94,8 @@
                             get involved <i class="fas fa-chevron-circle-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-                            <li><a class="submenu-text" href="#">Mentors</a></li>
-                            <li><a class="submenu-text" href="#">career</a></li>
+                            <li><a class="submenu-text" href="mentors.html">Mentors</a></li>
+                            <li><a class="submenu-text" href="career.html">career</a></li>
                         </ul>
                     </div>
 
@@ -102,36 +104,40 @@
                             Connect & giving <i class="fas fa-chevron-circle-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-                            <li><a class="submenu-text" href="#">contact us</a></li>
-                            <li><a class="submenu-text" href="#">donate</a></li>
+                            <li><a class="submenu-text" href="#contact">contact us</a></li>
+                            <li><a class="submenu-text" href="donate.html">donate</a></li>
                         </ul>
                     </div>
 
                     <div onclick="closeAll()" class="my-2 dropdown">
-                        <a class="nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-text" href="curriculum.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             co-curriculum <i class="fas fa-chevron-circle-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-content ms-2 mt-2">
-                            <li><a class="submenu-text" href="#">library</a></li>
-                            <li><a class="submenu-text" href="#">debating club</a></li>
-                            <li><a class="submenu-text" href="#">olympiad & competition</a></li>
+                            <li><a class="submenu-text" href="library.html">library</a></li>
+                            <li><a class="submenu-text" href="debating.html">debating club</a></li>
+                            <li><a class="submenu-text" href="olympiad.html">olympiad & competition</a></li>
                         </ul>
                     </div>
 
                     <div onclick="closeAll()" class="my-2">
-                        <a href="#" class="nav-text">Album</a>
+                        <a href="album.html" class="nav-text">Album</a>
                     </div>
 
                     <div onclick="closeAll()" class="my-2">
-                        <a href="#" class="nav-text">Scholarship</a>
+                        <a href="scholarship.html" class="nav-text">Scholarship</a>
                     </div>
 
                     <div onclick="closeAll()" class="my-2">
-                        <a href="#" class="nav-text">session & workshop</a>
+                        <a href="session.html" class="nav-text">session & workshop</a>
                     </div>
+
+                    <!-- <div onclick="closeAll()" class="my-2">
+                        <a href="publication.html" class="nav-text">Publication</a>
+                    </div> -->
 
                 </div>
-
             </div>
         </nav>
         <!-- navbar end -->
@@ -139,11 +145,61 @@
     </header>
 
     <main>
-
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
     </main>
-    <footer>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 pb-4">
+                    <div>
+                        <p class="footer-text">Millions of people of all ages and from around the world are improving
+                            other lives
+                            better with us.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8 pb-4">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-1 pb-4">
+                            <div class="footer-link">
+                                <a href="our-people.html">Our People</a><br>
+                                <a href="history.html">History</a><br>
+                                <a href="work.html">How We Work?</a><br>
+                                <a href="mission.html">Mission & Vision</a><br>
+                                <a href="places.html">Places</a><br>
+                                <a href="scholarship.html">Scholarship</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-1 pb-4">
+                            <div class="footer-link">
+                                <a href="sectors.html">Sectors & Priorities</a><br>
+                                <a href="archive.html">Archive</a><br>
+                                <a href="mentors.html">Mentors</a><br>
+                                <a href="career.html">Career</a><br>
+                                <a href="donate.html">Donate</a><br>
+                                <a href="session.html">Session & Workshop</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-1 pb-4">
+                            <div class="footer-link">
+                                <a href="curriculum.html">Co-curriculum</a><br>
+                                <a href="library.html">Library</a><br>
+                                <a href="debating.html">Debating Club</a><br>
+                                <a href="olympiad.html">Olympiad</a><br>
+                                <a href="album.html">Album</a><br>
+                                <a href="publication.html">Publication</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- footer end  -->
 
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

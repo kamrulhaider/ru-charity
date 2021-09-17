@@ -1,6 +1,6 @@
 /* footer start  */
 footer {
-  padding: 40px 20px;
+  padding: 20px 0;
   background: rgb(73, 192, 240);
   background: -moz-linear-gradient(
     top,
@@ -23,18 +23,15 @@ footer {
   color: #fff;
 }
 .footer-link a {
-  padding: 5px 10px;
   margin: 0 0 5px 0;
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
   border-radius: 5px;
   color: #fff;
-  border: 1px solid transparent;
   transition: all 0.4s ease-in-out;
 }
 .footer-link a:hover {
-  border: 1px solid #000000;
-  background-color: rgb(32, 104, 199);
+  color: #000000;
 }
 /* footer end  */
