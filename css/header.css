@@ -147,3 +147,20 @@ marquee {
     color: #000000;
   }
 }
+@media (max-width: 992px) {
+  .dropdown-content,
+  .dropdown-content2,
+  .dropdown-content3 {
+    width: max-content;
+  }
+  .dropdown-content2 {
+    top: 15px;
+    left: 160px;
+    z-index: 1000;
+  }
+  .dropdown-content3 {
+    top: 45px;
+    left: 160px;
+    z-index: 1000;
+  }
+}

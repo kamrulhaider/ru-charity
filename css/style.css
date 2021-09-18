@@ -3,12 +3,16 @@ body {
 }
 /* common styles */
 .heading {
+  border-bottom: 2px solid #838383;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
   color: #232524;
 }
-
+.notification {
+  font-size: 16px;
+  color: #000000;
+}
 .slider-bg {
   height: 83vh;
   background-image: url(../images/2.svg);
@@ -273,6 +277,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.contact-txtarea {
+  height: 90px;
 }
 .social-link i {
   font-size: 40px;
