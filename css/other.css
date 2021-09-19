@@ -11,3 +11,27 @@
 .para {
   text-align: justify;
 }
+.blog-image {
+  width: 400px;
+  height: 300px;
+}
+/* reach us  start*/
+.contact {
+  background-image: url(../images/1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-txtarea {
+  height: 90px;
+}
+.social-link i {
+  font-size: 40px;
+  color: #ffffff;
+  transition: 0.4s ease-in-out;
+}
+.social-link i:hover {
+  font-size: 40px;
+  color: #000000;
+}
+/* reach us end  */

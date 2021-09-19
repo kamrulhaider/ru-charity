@@ -41,6 +41,7 @@ marquee {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c0f0', endColorstr='#2cafe3',GradientType=0 );
 }
 .nav-text {
+  cursor: pointer;
   margin-left: 10px;
   display: inline;
   margin-bottom: 0;
