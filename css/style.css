@@ -294,3 +294,8 @@ body {
 .back-top {
   background-color: #3451a1;
 }
+@media (max-width: 992px) {
+  .fb-page {
+    width: fit-content;
+  }
+}
