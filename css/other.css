@@ -1,3 +1,10 @@
+.title-text {
+}
+.para {
+}
+.donate-text {
+  color: #0c629b;
+}
 .banner-bg {
   background-image: url(../images/3.svg);
   background-position: center;
@@ -25,13 +32,26 @@
 .contact-txtarea {
   height: 90px;
 }
+.social-link2 i {
+  font-size: 40px;
+  color: #000000;
+  transition: 0.4s ease-in-out;
+}
+.social-link2 i:hover {
+  font-size: 40px;
+  color: #4a89b3;
+}
 .social-link i {
   font-size: 40px;
-  color: #ffffff;
+  color: #000000;
   transition: 0.4s ease-in-out;
 }
 .social-link i:hover {
   font-size: 40px;
-  color: #000000;
+  color: #4a89b3;
 }
 /* reach us end  */
+.donate {
+  background-color: #a5c4d8;
+  border-radius: 10px;
+}
